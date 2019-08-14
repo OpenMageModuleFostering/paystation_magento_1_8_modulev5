@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Paystation_Magento_1_8_ModuleV5",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Paystation three-party payment module with Postback",
+    "authors": [
+    {
+        "name": "Paystation",
+        "email": "info@paystation.co.nz"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

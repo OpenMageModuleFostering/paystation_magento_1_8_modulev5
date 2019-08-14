@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<config>
+   <sections>
+        <payment>
+            <groups>
+                <paystation_standard translate="label" module="paystation">
+                    <label>Paystation Payment Gateway</label>
+
+                    <frontend_type>text</frontend_type>
+                    <sort_order>102</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <title translate="label">
+                            <label>Title</label>
+                            <comment>This is the text that appears beside the payment method during checkout.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <paystation_id translate="label">
+                            <comment>Provided by Paystation</comment>
+                            <label>Paystation ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>  
+                        </paystation_id>
+                        <gateway_id translate="label">
+                             <comment>Provided by Paystation</comment>
+                            <label>Gateway ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </gateway_id>
+                        <hmac_key translate="label">
+                            <comment>Provided by Paystation</comment>
+                            <label>HMAC key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hmac_key> 
+                        
+                     
+			<postback translate="label">
+                            <comment>
+                                <![CDATA[
+                            We strongly suggest setting 'Enable Postback' to 'Yes' as it will allow the cart to capture payment results even
+                            if your customers re-direct is interrupted.  However, if your development/test environment is local or on a network
+                            that cannot receive connections from the internet, you must set 'Enable Postback' to 'No'.<br/><br/>
+
+                            Your Paystation account needs to reflect your Magento settings accurately, otherwise order status will not update correctly.
+                            Email <b>info@paystation.co.nz</b> with your Paystation ID and advise whether 'Enable Postback' is set to 'Yes' or 'No' in your Magento settings.
+                            ]]>
+                            </comment>
+                            <label>Enable PostBack</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </postback>                        
+			<testmode translate="label">
+                            <label>Test Mode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </testmode>
+                         <sort_order translate="label">
+                            <comment>Optional parameter - controlls the order payment methods are 
+                            displayed in the checkout.</comment>
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sort_order>
+                    </fields>
+                </paystation_standard>
+            </groups>
+        </payment>
+    </sections>
+</config>
