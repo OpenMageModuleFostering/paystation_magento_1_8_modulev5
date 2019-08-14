@@ -275,7 +275,7 @@ class Mage_Paystation_Model_Standard extends Mage_Payment_Model_Method_Abstract 
         $quote = Mage::getModel('sales/quote')->load($quoteID);
         $reservedOrderId = $quote->getReservedOrderId();
 
-        $authenticationKey  = Mage::getStoreConfig('payment/paystation_standard/hmac_key', Mage::app()->getStore());
+        $authenticationKey  = trim(Mage::getStoreConfig('payment/paystation_standard/hmac_key', Mage::app()->getStore()));
         $hmacWebserviceName = 'paystation';
         $pstn_HMACTimestamp = time();            
 
@@ -284,8 +284,8 @@ class Mage_Paystation_Model_Standard extends Mage_Payment_Model_Method_Abstract 
         $amount = ($checkoutfields['final_amount'] * 100);
         $testMode = ($checkoutfields['testmode'] ? true : false);
         $postback =  Mage::getStoreConfig('payment/paystation_standard/postback', Mage::app()->getStore());
-        $pstn_pi = $checkoutfields['merchant_id']; //"607113"; //Paystation ID
-        $pstn_gi = $checkoutfields['gateway_id']; //"CARDPAY"; //Gateway ID
+        $pstn_pi = trim($checkoutfields['merchant_id']); //"607113"; //Paystation ID
+        $pstn_gi =trim($checkoutfields['gateway_id']); //"CARDPAY"; //Gateway ID
         $site = ''; // site can be used to differentiate transactions from different websites in admin.
         // $pstn_mr  = urlencode('schlocalhost-' . time()); // merchant reference is optional, but is a great way to tie a transaction in with a customer (this is displayed in Paystation Administration when looking at transaction details). Max length is 64 char. Make sure you use it!
         if ($testMode) $pstn_mr = urlencode($email.':test-mode:'.$reservedOrderId);

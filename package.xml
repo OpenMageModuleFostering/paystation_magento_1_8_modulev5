@@ -1,18 +1,26 @@
 <?xml version="1.0"?>
 <package>
     <name>Paystation_Magento_1_8_ModuleV5</name>
-    <version>0.0.10</version>
+    <version>0.0.13</version>
     <stability>stable</stability>
     <license>OSL v3.0</license>
     <channel>community</channel>
     <extends/>
-    <summary>Paystation three-party payment module with Postback</summary>
-    <description>Paystation three-party payment module with Postback</description>
-    <notes>Now with postback</notes>
+    <summary>Paystation One-page Checkout with Post Back</summary>
+    <description>The Paystation 3-Party One-Page Checkout Module with Post Back for Magento 1.8 is free to download. For more information on Paystation please visit www.paystation.co.nz.&#xD;
+&#xD;
+This module utilizes the Paystation Quick Look-up tool for transaction validation and Post Back tool for receiving transaction responses even if the customer re-direct is interrupted (optional).&#xD;
+&#xD;
+If you are installing this module it is CRUCIAL that you follow all of the install instructions. The instructions can be found in the Release Notes tab above.&#xD;
+&#xD;
+To request a free development account for integration testing please email info@paystation.co.nz.&#xD;
+&#xD;
+Paystation is your ideal payments solution provider whether you are just starting out in eCommerce or are already well established and looking to leverage your existing technology for smarter payments.</description>
+    <notes>Minor bug fixes</notes>
     <authors><author><name>Paystation</name><user>Paystation</user><email>info@paystation.co.nz</email></author></authors>
-    <date>2014-08-18</date>
-    <time>05:21:37</time>
-    <contents><target name="magelocal"><dir><dir name="Mage"><dir name="Paystation"><dir name="Block"><dir name="Standard"><file name="Form.php" hash="29304def98cb1949740c2a6d8edba9e0"/></dir></dir><dir name="Helper"><file name="Data.php" hash="37cfb5767197bb15b7c02f05b303a999"/></dir><dir name="Model"><file name="Abstract.php" hash="274b033bb3bc1bfe8f540114f810960e"/><file name="Session.php" hash="f677d1b5e6e2104536e4189eb563681a"/><dir name="Source"><file name="Cctype.php" hash="8ad4533997e40260a159a0014f5cf713"/><file name="PaymentAction.php" hash="920c20b2fe48b3cdce1cbcccdf3ec516"/><file name="Processing.php" hash="b66b423e58438e041ae5cddea19e2254"/><file name="StandardAction.php" hash="a324886c922616e3e640bf6cb0f20901"/></dir><file name="Standard.php" hash="2f74e9a16ce24904b6eac957650a2fcd"/></dir><dir name="controllers"><file name="PostbackController.php" hash="76bb5fd51651c3fbd75f0e57e8bd9153"/><file name="StandardController.php" hash="f5e3d87f3d3e9358e4b18176604ecb9a"/></dir><dir name="etc"><file name="config.xml" hash="2d9b8ff62b677f80cc388b433c2de0ea"/><file name="system.xml" hash="1be2030b37f504cca10b64e6682e7eb3"/></dir></dir></dir></dir></target><target name="mageetc"><dir><dir name="modules"><file name="Mage_Paystation.xml" hash="dcfb6c0fa8c356597482c51671e8c726"/></dir></dir></target></contents>
+    <date>2015-01-06</date>
+    <time>22:31:42</time>
+    <contents><target name="magelocal"><dir><dir name="Mage"><dir name="Paystation"><dir name="Block"><dir name="Standard"><file name="Form.php" hash="29304def98cb1949740c2a6d8edba9e0"/></dir></dir><dir name="Helper"><file name="Data.php" hash="37cfb5767197bb15b7c02f05b303a999"/></dir><dir name="Model"><file name="Abstract.php" hash="274b033bb3bc1bfe8f540114f810960e"/><file name="Session.php" hash="f677d1b5e6e2104536e4189eb563681a"/><dir name="Source"><file name="Cctype.php" hash="8ad4533997e40260a159a0014f5cf713"/><file name="PaymentAction.php" hash="920c20b2fe48b3cdce1cbcccdf3ec516"/><file name="Processing.php" hash="b66b423e58438e041ae5cddea19e2254"/><file name="StandardAction.php" hash="a324886c922616e3e640bf6cb0f20901"/></dir><file name="Standard.php" hash="507dad0df484b0b0df9ce90d55520054"/></dir><dir name="controllers"><file name="PostbackController.php" hash="f2e6b84825d2eeb042ba4ceab95c9b87"/><file name="StandardController.php" hash="4cd17a7059725727ca9eafc8f1f6f726"/></dir><dir name="etc"><file name="config.xml" hash="2d9b8ff62b677f80cc388b433c2de0ea"/><file name="system.xml" hash="1be2030b37f504cca10b64e6682e7eb3"/></dir></dir></dir></dir></target><target name="mageetc"><dir><dir name="modules"><file name="Mage_Paystation.xml" hash="dcfb6c0fa8c356597482c51671e8c726"/></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.6</min><max>6.0.0</max></php></required></dependencies>
 </package>
