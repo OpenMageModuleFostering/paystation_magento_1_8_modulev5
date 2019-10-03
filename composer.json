@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Paystation_Magento_1_8_ModuleV5",
+    "name": "OpenMageModuleFostering\/Paystation_Magento_1_8_ModuleV5",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Paystation One-page Checkout with Post Back",
     "authors": [
-    {
-        "name": "Paystation",
-        "email": "info@paystation.co.nz"
-    }
-],
+        {
+            "name": "Paystation",
+            "email": "info@paystation.co.nz"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
